@@ -1,0 +1,253 @@
+/*Margen de la pagina completa*/
+body{
+    margin: 0;
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif; 
+    background: white;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, white, rgba(170, 52, 52, 0.863));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, white, rgba(170, 52, 52, 0.863)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+/*color de fondo y tamaño de la barra de navegación*/
+.navbar{
+    background-color: rgb(255, 255, 255);
+    height: 60px;
+}
+/*Posicionamiento del dropdawn de opciones*/
+.navbar .dropdown{
+    transform: translateX(-10px);
+}
+/*Diseño de letras de la barra*/
+.navbar .container a{
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: none;
+    margin-left: 10px;
+
+}
+.navbar .dropdown .dropdown-menu{
+    background-color: white;
+    position:fixed;
+    z-index: 1;
+}
+.navbar .dropdown .dropdown-menu .dropdown-item{
+    transform: translateX(-9.5px);
+    font-size: .9rem;
+    font-weight: 700;
+}
+.navbar .dropdown .dropdown-menu .dropdown-item:hover{
+    background-color: rgb(255, 255, 255);
+}
+/*Diseño y posicionamiento de contenido*/
+.container.my-3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.container .row .formulario{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    max-width: 950px;
+    width: 100%;
+    height: auto;
+    background-color: rgb(212, 221, 89);
+}
+.container .row .formulario h2{
+    font-size: 1.7rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*margen de los label (n° y nombre del paciente)*/
+.container.my-3 .row .formulario div label{
+   margin-bottom: 5px;
+}
+.container.my-3 .row .formulario div .btn-group{
+   margin-bottom: 10px;
+}
+.container.my-3 .row .formulario div .btn-group .btn{
+   border-color: #3C3B3F;
+   border-width: 2px;
+}
+.container.my-3 .row .formulario .total .row .imprimir .return button{
+    background-color: blue;
+    border-radius: 49px; 
+    color:white;
+    font-weight: 700;
+    width: 150px;
+    transform: translateY(-20px) translateX(65px);
+}
+
+.container.my-3 .row .formulario .total .row .imprimir .btn{
+    background-color: blue;
+    border-radius: 49px; 
+    color:white;
+    font-weight: 700;
+    width: 150px;
+    transform: translateY(-15px) translateX(65px);
+}
+    .container.my-3 .row .formulario .total .row .princ .input-group span{
+        background-color: #3C3B3F;
+        border-color: #3C3B3F;
+    }
+    .container.container.my-3 .row .formulario .total .row .princ .input-group span i{
+        color: white;
+    }
+    .container.container.my-3 .row .formulario .total .row .princ .form-floating input{
+        border-color: #3C3B3F;
+    }
+    /**Boton de impresion*/
+    .container.my-3 .row .formulario .total .row .imprimir{
+        transform:  translateY(9px) ;
+    }
+    .container.my-3 .row .formulario .total .row .imprimir button{
+        transform: translateX(64px);
+    }
+
+    /**Signos vitales*/
+    .container.container.my-3 .row .formulario .total .accordion .accordion-item .accordion-collapse .accordion-body .form .row .col-sm-12 .input-group span{
+        background-color: #3C3B3F;
+        border-color: #3C3B3F;
+        border-width: 2px;        
+    }
+    .container.container.my-3 .row .formulario .total .accordion .accordion-item .accordion-collapse .accordion-body .form .row .col-sm-12 .input-group span i {
+        color: white;
+        font-size: 20px;
+    }
+    .container.container.my-3 .row .formulario .total .accordion .accordion-item .accordion-collapse .accordion-body .form .row .col-sm-12 .input-group .form-floating input{
+        border-color: #3C3B3F;
+ 
+    }
+    .container.container.my-3 .row .formulario .total .accordion .accordion-item .accordion-collapse .accordion-body .form .row .col-sm-12 .input-group .form-floating .here.uno{
+        font-size: .8rem;
+    }
+    .container.container.my-3 .row .formulario .total .accordion .accordion-item .accordion-collapse .accordion-body .form .row .col-sm-12 .input-group .form-floating .here.dos{
+        font-size: .8rem;
+    }
+    .container.container.my-3 .row .formulario .total .accordion .accordion-item .accordion-collapse .accordion-body .form .row .col-sm-12 .input-group .form-floating .here.tres{
+        font-size: .8rem;
+    }
+    .container.container.my-3 .row .formulario .total .accordion .accordion-item .accordion-collapse .accordion-body .form .row .col-sm-12 .input-group .form-floating textarea{
+        border-color: #3C3B3F;
+    }
+    .container.container.my-3 .row .formulario .total .accordion .accordion-item .accordion-collapse .accordion-body .form .row .col-sm-12 .form-check input {
+        border-color: #3C3B3F;
+        background-color: green;
+        height: 20px;
+        width: 20px;
+    }
+    .container.container.my-3 .row .formulario .total .accordion .accordion-item .accordion-collapse .accordion-body .form .row .col-sm-12 .form-check label{
+        transform: translateY(3px);
+    }
+    /*Checks patologicos */
+    .container.container.my-3 .row .formulario .total .accordion .accordion-item .accordion-collapse .accordion-body .form .row .col-sm-12 .form-check .taba {
+        border-color: #3C3B3F;
+        background-color: green;
+        height: 20px;
+        width: 20px;
+    }
+    .container.container.my-3 .row .formulario .total .accordion .accordion-item .accordion-collapse .accordion-body .form .row .col-sm-12 .form-check label{
+        transform: translateY(3px);
+    }
+    .container.container.my-3 .row .formulario .total .accordion .accordion-item .accordion-collapse .accordion-body .form.tres .primercheck div .form-check input{
+        border-color: #3C3B3F;
+        background-color: green;
+        height: 20px;
+        width: 20px;
+    }
+    .container.container.my-3 .row .formulario .total .accordion .accordion-item .accordion-collapse .accordion-body .form.tres .primercheck div .form-check label{
+        transform: translateY(3px);
+    }
+    .container.container.my-3 .row .formulario .total .accordion .accordion-item .accordion-collapse .accordion-body .form.tres .segundacheck{
+        transform: translateX(120px) translateY(-93px);
+    }
+    .container.container.my-3 .row .formulario .total .accordion .accordion-item .accordion-collapse .accordion-body .form.tres .segundacheck div .form-check input{
+        border-color: #3C3B3F;
+        background-color: green;
+        height: 20px;
+        width: 20px;
+    }
+    .container.container.my-3 .row .formulario .total .accordion .accordion-item .accordion-collapse .accordion-body .form.tres .segundacheck div .form-check label{
+        transform: translateY(3px);
+    }
+    .container.container.my-3 .row .formulario .total .accordion .accordion-item .accordion-collapse .accordion-body .form.tres .tercercheck{
+        transform: translateX(250px) translateY(-186px);
+    }
+    .container.container.my-3 .row .formulario .total .accordion .accordion-item .accordion-collapse .accordion-body .form.tres .tercercheck .form-check input{
+        border-color: #3C3B3F;
+        background-color: green;
+        height: 20px;
+        width: 20px;
+    }
+    .container.container.my-3 .row .formulario .total .accordion .accordion-item .accordion-collapse .accordion-body .form.tres .tercercheck div .form-check label{
+        transform: translateY(3px);
+    }
+    .container.container.my-3 .row .formulario .total .accordion .accordion-item .accordion-collapse .accordion-body .form.tres{
+        height: 100%;
+        max-height: 220px;
+    }
+    .container.container.my-3 .row .formulario .total .accordion .accordion-item .accordion-collapse .accordion-body .form.tres .container{
+        transform: translateY(-270px);
+    }
+    .container.container.my-3 .row .formulario .total .accordion .accordion-item .accordion-collapse .accordion-body .form.tres .col-sm-12.tex div .input-group span{
+        background-color: #3C3B3F;
+        border-color: #3C3B3F;
+        border-width: 2px;
+    }
+    .container.container.my-3 .row .formulario .total .accordion .accordion-item .accordion-collapse .accordion-body .form.tres .col-sm-12.tex div .input-group span i{
+        color: white;
+    }
+    .container.container.my-3 .row .formulario .total .accordion .accordion-item .accordion-collapse .accordion-body .form.tres .col-sm-12.tex div .input-group .form-floating textarea{
+        border-color: #3C3B3F;
+    }
+    .container.container.my-3 .row .formulario .total .accordion .accordion-item .accordion-collapse .accordion-body .form.tres .col-sm-12.tex{
+        transform: translateX(422px) translateY(-275px);
+    }
+    .container.container.my-3 .row .formulario .total .accordion .accordion-item .accordion-collapse .accordion-body .form .row.sistema .col-sm-12 .input-group .form-floating .tituloexterno .titulointerno{
+        font-size: .7rem;
+    }  
+    .container.container.my-3 .row .formulario .total .accordion .accordion-item .accordion-collapse .accordion-body .form .row.sistema .col-sm-12 .input-group .form-floating .tituloexternodos .titulointernodos{
+        font-size: .7rem;
+    } 
+    /**Contenedor de los botones*/
+    .container.final{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .container.final input{
+        background-color: rgba(137, 240, 221, 0.719);
+        border-radius: 49px;
+        max-width: 200px;
+        width: 100%;
+        font-size: 1.1rem;
+        font-weight: 700;
+        margin-bottom: 5px;
+        transform: translateX(12px);
+    }
+    .container.final input:hover{
+        background-color: rgba(0, 255, 204, 0.904);
+    }
+        /*Acordion*/
+        .container.my-3 .row .formulario div .accordion .accordion-item .accordion-header .accordion-button{
+             width: 930px;   
+             height: 30px;
+             background-color: rgba(156, 241, 70, 0.541);
+             border-width: 2px;
+             border: #3C3B3F; 
+
+        }
+        .container.my-3 .row .formulario div .accordion .accordion-item .accordion-header .accordion-button .accordion-collapse .acoordion-body{
+            width: 930px; 
+        }
+        .disabled {
+            opacity: 0.5; /* Opacidad reducida para indicar que está deshabilitado */
+            pointer-events: none; /* Desactivar eventos de clic y puntero */
+         }
+         
+ 
+      

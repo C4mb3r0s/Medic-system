@@ -1,0 +1,63 @@
+
+/*Diseño y posicionamiento de contenido*/
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Titulo del boton de la ruta*/
+.container .bienvenida h1{
+    font-size: 1.6rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*Span de input*/
+.container .bienvenida .form .row .col-sm-6 .input-group span{
+    border-color: #3C3B3F;
+    background-color: #3C3B3F;
+}
+/*Nombre de la fecha*/
+.container .bienvenida .form .row .col-sm-6 .input-group .form-floating .titlee{
+    transform: translateY(-12px);
+}
+/*Borde de los input*/
+.container .bienvenida .form .row .col-sm-6 .input-group .form-floating input{
+    border-color: #3C3B3F;
+}
+/*Color del borde de los input*/
+.container .bienvenida .form .row .col-sm-6 .input-group .form-floating select{
+    border-color: #3C3B3F;
+}
+
+/*Iconos dentro del span*/
+.container .bienvenida .form .row .col-sm-6 .input-group .input-group-text i{
+    font-size: 20px;
+    color: white;
+}
+.container .bienvenida .form .row .checks .form-check input{
+    border-color: #3C3B3F;
+    background-color: green;
+    height: 20px;
+    width: 20px;
+}
+.container .bienvenida .form .container-final{
+    display: flex;
+    justify-content: center;
+}
+.container .bienvenida .form .container-final input{
+    background-color: rgba(235, 144, 71, 0.719);
+    border-radius: 49px;
+    max-width: 200px;
+    width: 100%;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.container .bienvenida .form .container-final input:hover{
+    background-color: rgb(255, 143, 51);
+}
+

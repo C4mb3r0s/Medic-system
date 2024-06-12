@@ -1,0 +1,127 @@
+/*Margen de la pagina completa*/
+body{
+    margin: 0;
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif; 
+    background: #3C3B3F;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #605C3C, #3C3B3F);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #605C3C, #3C3B3F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+/*color de fondo y tamaño de la barra de navegación*/
+.navbar{
+    background-color: rgba(0, 255, 204, 0.904);
+    height: 60px;
+}
+/*Posicionamiento del dropdawn de opciones*/
+.navbar .dropdown{
+    transform: translateX(-10px);
+}
+/*Diseño de letras de la barra*/
+.navbar .container a{
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: none;
+    margin-left: 10px;
+
+}
+.navbar .dropdown .dropdown-menu{
+    background-color: white;
+    position:fixed;
+    z-index: 1;
+}
+.navbar .dropdown .dropdown-menu .dropdown-item{
+    transform: translateX(-9.5px);
+    font-size: .9rem;
+    font-weight: 700;
+}
+.navbar .dropdown .dropdown-menu .dropdown-item:hover{
+    background-color: rgba(0, 255, 204, 0.904);
+}
+/*Diseño y posicionamiento de contenido*/
+.container.my-3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    border-radius: 30px;
+}
+
+/*Titulo del boton de la ruta*/
+.container.my-3 .row .formulario h2{
+    font-size: 1.7rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    /*Formatos de los input el formulario*/
+    .container.my-3 .row .formulario .form .row.dos .dos label{
+        font-size: .8rem;
+    }
+    /*Grupo de sangre y rh*/
+    .container.my-3 .row .formulario .form .row.cuatro .rh label{
+        font-size: 0.9rem;
+    }
+    .container .row .formulario .form .row.principal .fecha .input-group .form-floating label{
+        transform: translateY(-12px);
+    }
+    /*Color del fondeo de los iconos*/
+    .container .row .formulario .form .row span{
+        border-color: #3C3B3F;
+        background-color: #3C3B3F;
+    }
+    /*Borde de los input*/
+    .container .row .formulario .form .row input{
+        border-color: #3C3B3F;
+    }
+    /*Color del borde de los input*/
+    .container .row .formulario .form .row select{
+        border-color: #3C3B3F;
+    }
+    /*Clor al poner el cursor sobre las opciones del selec*/
+    select.form-select option:hover {
+        background-color: rgba(0, 255, 204, 0.904);
+    }
+    /*Iconos dentro del span*/
+    .container .row .formulario .form .row i{
+        font-size: 20px;
+        color: white;
+    }
+    /*Check*/
+    .container .row .formulario .form .row .checks .form-check input{
+        border-color: #3C3B3F;
+        background-color: green;
+        height: 20px;
+        width: 20px;
+        transform: translateY(15px) translateX(50px);
+    }
+    .container .row .formulario .form .row .checks .form-check label{
+        transform: translateY(17px) translateX(50px);
+    }
+
+    /*Alineacion a la derecha*/
+    .container.final{
+        display: flex;
+        justify-content: flex-end;
+      }
+     
+    
+    /*Boton*/
+    .container.final button{
+        background-color: rgba(137, 240, 221, 0.719);
+        border-radius: 49px;
+        max-width: 150px;
+        width: 100%;
+        font-size: 1.1rem;
+        font-weight: 700;
+        margin-bottom: 5px;
+        transform: translateX(12px);
+    }
+    .container.final button:hover{
+        background-color: rgba(0, 255, 204, 0.904);
+    }

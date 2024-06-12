@@ -1,0 +1,184 @@
+/*Margen de la pagina completa*/
+body{
+    margin: 0;
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif; 
+    background: #3C3B3F;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #605C3C, #3C3B3F);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #605C3C, #3C3B3F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+/*posicion del contenedor*/
+.form-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Asegura que el contenedor ocupe toda la altura visible de la página */
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+}
+/*Tamaño del login*/
+.sign-in{
+    height: 400px;
+    width: 400px;
+    transform: translateY(-140px);
+}
+.icon{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(75px);
+}
+.icon span{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    margin: 0;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 10px solid transparent;
+    box-sizing: border-box;
+    background-color: black;
+    z-index: 1;
+  }
+  .icon span i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: px;
+    color: white;
+    z-index: 1;
+  }
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Asegura que el contenedor ocupe toda la altura visible de la página */
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+}
+form{
+    background-color:rgba(0, 255, 204, 0.904);
+    max-height: 400px;
+    padding: 20px; /* Agrega un relleno interno para el contenido del formulario */
+    box-sizing: border-box;
+    border-radius: 45px;
+}
+.container .form-container .sign-in-form h1{
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.container .form-container .sign-in-form h2{
+    color: black;
+    font-size: 1rem;
+}
+/*diseño de los input*/
+.input-field input{
+    outline: none;
+    border: none;
+    line-height: 1;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #333;
+}
+.input-field{
+    max-width: 300px;
+    width: 100%;
+    background-color: white;
+    margin: 10px 0;
+    height: 55px;
+    border-radius: 55px;
+    display: grid;
+    grid-template-columns: 15% 78%;
+    padding: 0 0.4rem;
+    position: relative;
+}
+.input-field i{
+    text-align: center;
+    line-height: 55px;
+    color:black;
+    transition: 0.5s;
+    font-size:2.1rem;
+}
+.input-field.dos{
+    grid-template-columns: 15% 69%;
+}
+.input-field input::placeholder{
+ color: black;
+ }
+/*boton de ver contraseña al login*/
+.input-field .btn{
+    box-shadow: none;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-49%) translateX(15px);
+    text-align: center;
+    line-height: 55px;
+    color: transparent;
+    transition: 0.5s;
+    font-size: 2.1rem;
+    background-color: transparent;
+    border-color: transparent;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 50%;
+    outline: none;
+  }
+.input-field .btn:active,
+.input-field .btn:focus {
+    background-color:transparent; /* cambiar el color de fondo del botón cuando se hace clic */
+    border-color:transparent;
+    outline: none;
+  }
+.input-field .btn i{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-42%) translateX(22px);
+    text-align: center;
+    line-height: 45px;
+    color: black;
+    transition: 0.5s;
+    font-size: 2rem;
+    background-color: transparent;
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+  }
+.sign-in-form span a{
+    margin-bottom: 3px;
+    color: black;
+    font-weight: 700;
+    text-decoration: underline;
+    font-size: 14px;
+}
+.sign-in-form .btn.solid{
+    width: 200px;
+    background-color: white;
+    border: none;
+    outline: none;
+    height: 49px;
+    border-radius: 49px;
+    color:#fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 10px 0;
+    cursor: pointer;    
+    transition: 0.5s;
+}
+.sign-in-form .btn.solid a{
+    color:black;
+}
+.sign-in-form .btn.solid{
+    position: relative;
+    align-content: center;     
+}
+.sign-in-form .btn.solid:hover{
+    background-color: rgb(138, 211, 20);
+}

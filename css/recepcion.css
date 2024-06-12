@@ -1,0 +1,137 @@
+/*Margen de la pagina completa*/
+body{
+    margin: 0;
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif; 
+    background: #3C3B3F;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #605C3C, #3C3B3F);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #605C3C, #3C3B3F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+/*color de fondo y tamaño de la barra de navegación*/
+.navbar{
+    background-color: rgba(0, 255, 204, 0.904);
+    height: 60px;
+}
+/*Posicionamiento del dropdawn de opciones*/
+.navbar .dropdown{
+    transform: translateX(-10px);
+}
+/*Diseño de letras de la barra*/
+.navbar .container a{
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: none;
+    margin-left: 10px;
+}
+.navbar .dropdown .dropdown-menu{
+    background-color: white;
+    position:fixed;
+    z-index: 1;
+}
+.navbar .dropdown .dropdown-menu .dropdown-item{
+    transform: translateX(-9.5px);
+    font-size: .9rem;
+    font-weight: 700;
+}
+.navbar .dropdown .dropdown-menu .dropdown-item:hover{
+    background-color: rgba(0, 255, 204, 0.904);
+}
+/*Diseño y posicionamiento de contenido*/
+.container.my-3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/*Titulo del boton de la ruta*/
+.container .row .bienvenida h1{
+    font-size: 1.7rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*Icono del contenedor de la ruta*/
+.container .row .bienvenida i {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    color: black;
+}
+.container .row .bienvenida form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+/*Boton de la ruta*/
+.container .row .bienvenida button{
+    width: 300px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    background-color: rgba(218, 165, 32, 0.63);
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.container .row .bienvenida button:hover{
+    background-color: goldenrod;
+}
+.container .row .bienvenida .principal i {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    color: black;
+}
+.container .row .bienvenida .btn.solid a{
+    color: black;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+/*Boton de reporte*/
+.container .row .tabla .container {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    margin-bottom: 10px;
+}
+/*Formato del boton de reporte*/
+.container .row .tabla .container button{
+    width: 250px;
+    background-color: rgba(255, 0, 0, 0.37);
+    margin: 8px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.5s;
+    transform: translateX(20px);
+}
+/*Efecto del boton de reporte*/
+.container .row .tabla .container button:hover{
+    background-color: rgb(255, 0, 0);
+}
+.container .row .tabla .container .btn a{
+    color: white;
+    font-size: .9rem;
+    font-weight: 700;
+}
+/*Justificacion del titulo de la tabla*/
+.container .row .tabla h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+
+
